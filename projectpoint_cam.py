@@ -5,9 +5,9 @@ import numpy as np
 from v_pointcloud import main
 sn = int(sys.argv[1]) if len(sys.argv)>1 else 20 #default 0-7517
 name = '%06d'%sn # 6 digit zeropadding
-img = f'D:/python_files4/frustum-convnet-master/frustum-convnet-master\data\kitti/training/image_2/{name}.png'
-binary = f'D:/python_files4/frustum-convnet-master/frustum-convnet-master\data\kitti/training/velodyne/{name}.bin'
-with open(f'D:\python_files4/frustum-convnet-master/frustum-convnet-master\data\kitti/training/calib/{name}.txt','r') as f:
+img = r'E:\python_file\visual-pointcloud\kitti\image_2\000000.png'
+binary = r'E:\python_file\visual-pointcloud\kitti\velodyne\000000.bin'
+with open(r'E:\python_file\visual-pointcloud\kitti\calib\000000.txt','r') as f:
     calib = f.readlines()
 
 

@@ -158,7 +158,7 @@ def main(path):
 
 if __name__ == '__main__':
     import pickle
-    pickle_data_path = r'D:\BaiduNetdiskWorkspace\python_file2\frustum_pointnets_pytorch-master\kitti\frustum_caronly_train.pickle'
+    pickle_data_path = r'E:\python_file\visual-pointcloud\kitti_infos_train.pkl'
     f = open(pickle_data_path,'rb')   #pickle_data_path为.pickle文件的路径；
     info = pickle.load(f)
     box2d_list = pickle.load(f)

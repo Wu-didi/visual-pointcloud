@@ -1,6 +1,7 @@
 import open3d as o3d
 import numpy as np
 
+# 使用open3d显示点云
 
 def show_small_point_v2(path,size=2):
     # name = '000001'
@@ -29,7 +30,7 @@ def show_small_point(path,size=2):
     points = path
 
     pcd = o3d.geometry.PointCloud()#传入3d点云
-    pcd.points = o3d.utility.Vector3dVector(points)	#point3D二维numpy矩阵,将其转换为open3d点云格式
+    pcd.points = o3d.utility.Vector3dVector(pcd)	#point3D二维numpy矩阵,将其转换为open3d点云格式
 
     # -----------------------初始化显示窗口--------------------------
     vis = o3d.visualization.Visualizer()
@@ -47,9 +48,9 @@ def show_small_point(path,size=2):
 
 
 if __name__ == "__main__":
-    name = '000001'
+    name = '000000'
     # -------------------------加载点云-----------------------------
-    binary = f'D:/python_files4/frustum-convnet-master/frustum-convnet-master\data\kitti/training/velodyne/{name}.bin'
+    binary = f'E:\python_file\visual-pointcloud\000000.bin'
 
     show_small_point(binary,12)
 
